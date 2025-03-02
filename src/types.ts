@@ -19,6 +19,7 @@ export interface Cita {
   fecha?: string;
   doctor?: string;
   imagenPaciente?: string;
+  imagenDoctor?: string;
 }
 
 export interface Medicamento {

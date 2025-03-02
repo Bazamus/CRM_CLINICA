@@ -1,3 +1,4 @@
+// @ts-expect-error React is used implicitly with JSX
 import React from 'react';
 import { User, Bell, Shield, Key, Globe, Palette, HelpCircle, Mail } from 'lucide-react';
 
@@ -20,7 +21,7 @@ export default function Settings({ isDarkMode, setIsDarkMode }: SettingsProps) {
           <div className="p-6 border-b border-gray-200">
             <div className="flex items-center gap-4">
               <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=120&h=120"
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=120&h=120"
                 alt="Perfil"
                 className="w-24 h-24 rounded-full object-cover border-4 border-gray-100"
               />
@@ -87,7 +88,7 @@ export default function Settings({ isDarkMode, setIsDarkMode }: SettingsProps) {
                   </div>
                 </div>
 
-                {'fields' in section ? (
+                {'fields' in section && section.fields ? (
                   <div className="space-y-4">
                     {section.fields.map((field) => (
                       <div key={field.label}>
@@ -105,7 +106,7 @@ export default function Settings({ isDarkMode, setIsDarkMode }: SettingsProps) {
                       Guardar Cambios
                     </button>
                   </div>
-                ) : 'options' in section ? (
+                ) : 'options' in section && section.options ? (
                   <div className="space-y-3">
                     {section.options.map((option) => (
                       <label key={option.label} className="flex items-center gap-3">

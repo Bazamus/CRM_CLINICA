@@ -53,7 +53,8 @@ export const citas: Cita[] = [
     tipo: 'Seguimiento',
     estado: 'Programada',
     fecha: formatearFecha(0),
-    doctor: 'Dr. Rodríguez',
+    doctor: 'Dra. Ana Rodriguez',
+    imagenDoctor: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=150&h=150',
     imagenPaciente: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=150&h=150'
   },
   {
