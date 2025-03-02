@@ -45,8 +45,8 @@ export default function Sidebar({ onNavigate, currentPage }: SidebarProps) {
       <div className="mt-8 pt-8 border-t border-gray-200">
         <div className="flex items-center gap-3 mb-6 px-3">
           <img
-            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=40&h=40"
-            alt="Perfil del doctor"
+            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=40&h=40"
+            alt="Perfil de la doctora"
             className="w-10 h-10 rounded-full object-cover"
           />
           <div>
